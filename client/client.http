@@ -1,0 +1,44 @@
+
+### get Tasks
+GET https://x0y0g8le7k.execute-api.sa-east-1.amazonaws.com HTTP/1.1
+content-type: application/json
+
+
+### get Tasks
+GET https://x0y0g8le7k.execute-api.sa-east-1.amazonaws.com/tasks HTTP/1.1
+content-type: application/json
+
+
+### add Task
+POST https://x0y0g8le7k.execute-api.sa-east-1.amazonaws.com/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Task Number four",
+    "description": "The Description of Task Number 4"
+}
+
+### get Task
+GET https://x0y0g8le7k.execute-api.sa-east-1.amazonaws.com/tasks/f5dc6a23-f480-4ba4-a452-5e006d10d23a HTTP/1.1
+content-type: application/json
+
+
+### update Task
+PUT https://x0y0g8le7k.execute-api.sa-east-1.amazonaws.com/tasks/dd84013e-3704-490c-abd1-da85ac1024a1 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Task Number nine",
+    "description": "The Description of Task Number 9",
+    "done": false
+}
+
+
+### delete Task
+DELETE https://x0y0g8le7k.execute-api.sa-east-1.amazonaws.com/tasks/dd84013e-3704-490c-abd1-da85ac1024a1 HTTP/1.1
+content-type: application/json
+
+### index.js
+
+
+
